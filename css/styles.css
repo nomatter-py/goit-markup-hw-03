@@ -8,6 +8,7 @@
     --footer-bg-color: #2F303A;
     --btn-filter-bg-color : #F5F4FA;
     --primary-brd-color:#EEEEEE;
+    --active-btn-color:#188CE8;
 }
 
 body{
@@ -60,6 +61,11 @@ h1, h2, h3, p {
 .logo > .logo-accent{
     color: var(--accent-color);
 }
+
+.page-header {
+    border: 1px solid var(--secondary-bg-color);
+}
+
 
 .page-header .container {
     display: flex;
@@ -169,6 +175,11 @@ h1, h2, h3, p {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+}
+
+.button:focus,
+.button:hover {
+    background-colo: var(--active-btn-color);
 }
 
 
@@ -297,6 +308,8 @@ h1, h2, h3, p {
 .footer .logo {
     display: inline-block;
     margin-bottom: 20px;
+
+    color: var(--primary-white-color);
 
     font-weight: 700;
     font-size: 26px;
